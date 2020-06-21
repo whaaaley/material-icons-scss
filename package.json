@@ -1,0 +1,14 @@
+{
+  "name": "material-icons-scss",
+  "version": "1.0.0",
+  "description": "Use material design icons as SVG data URLs in Sass",
+  "repository": {
+    "url": "whaaaley/material-icons-scss"
+  },
+  "license": "ISC",
+  "author": "Dustin Dowell",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
