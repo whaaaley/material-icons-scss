@@ -1,5 +1,5 @@
 {
-  "name": "material-icons-scss",
+  "name": "@whaaaley/material-icons-scss",
   "version": "1.0.0",
   "description": "Use material design icons as SVG data URLs in Sass",
   "repository": {
