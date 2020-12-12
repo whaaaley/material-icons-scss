@@ -1,9 +1,9 @@
 
 # material-icons-scss
 
-Use material design icons as SVG data URLs in Sass
+> Material design icon functions for SCSS
 
-This project uses icons directly from the [google/material-design-icons](https://github.com/google/material-design-icons) repository
+This project is generated from the official [google/material-design-icons](https://github.com/google/material-design-icons) repository.
 
 ## Install
 
@@ -32,4 +32,13 @@ $icon-menu: ic-menu-24px($red);
   height: 24px;
   background: url($icon-menu) center no-repeat;
 }
+```
+
+## How to build
+
+```
+git clone https://github.com/whaaaley/material-icons-scss.git
+cd material-icons-scss
+git clone https://github.com/google/material-design-icons.git
+node index.js
 ```
