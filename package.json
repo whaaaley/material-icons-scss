@@ -1,7 +1,7 @@
 {
   "name": "@whaaaley/material-icons-scss",
   "version": "2.0.0",
-  "description": "Use material design icons as SVG data URLs in Sass",
+  "description": "Material design icon functions for SCSS",
   "repository": {
     "url": "whaaaley/material-icons-scss"
   },
@@ -9,9 +9,7 @@
   "author": "Dustin Dowell",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf tmp dist && mkdir {tmp,dist}",
-    "optimize": "svgo -r -q --enable=removeDimensions,sortAttrs -f material-design-icons/src -o tmp",
-    "build": "npm run clean && npm run optimize && node index.js"
+    "build": "make"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
