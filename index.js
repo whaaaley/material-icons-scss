@@ -35,11 +35,11 @@ const icon = (name, svg) => {
 }
 
 const dist = {
-  'materialicons/': { name: 'material-icons', data: '' },
-  'materialiconsoutlined/': { name: 'material-icons-outlined', data: '' },
-  'materialiconsround/': { name: 'material-icons-round', data: '' },
-  'materialiconssharp/': { name: 'material-icons-sharp', data: '' },
-  'materialiconstwotone/': { name: 'material-icons-twotone', data: '' }
+  'materialicons/': { name: 'filled', data: '' },
+  'materialiconsoutlined/': { name: 'outlined', data: '' },
+  'materialiconsround/': { name: 'round', data: '' },
+  'materialiconssharp/': { name: 'sharp', data: '' },
+  'materialiconstwotone/': { name: 'twotone', data: '' }
 }
 
 walk('./tmp', path => {
@@ -58,5 +58,5 @@ const hexFn = `\n@function hex($hex) {\n  @return '%23' + str-slice($hex + '', 2
 
 for (const key in dist) {
   const file = dist[key]
-  fs.writeFileSync('dist/' + file.name + '.scss', hexFn + file.data)
+  fs.writeFileSync('style/' + file.name + '.scss', hexFn + file.data)
 }
