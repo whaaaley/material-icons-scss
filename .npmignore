@@ -1,3 +1,6 @@
+node_modules
+material-design-icons
+tmp
+
 Makefile
 index.js
-README.md
