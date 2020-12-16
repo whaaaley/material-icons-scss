@@ -1,81 +1,62 @@
 
 const fs = require('fs')
 
-// Read the root directory
+const walk = (path, callback) => {
+  const entry = fs.readdirSync(path)
 
-const rootPath = './material-design-icons/'
-const rootDir = fs.readdirSync(rootPath, { withFileTypes: true })
-
-// Filter out non-directories
-// Not needed but it reduces the amount of errors we catch and log below
-
-const rootDirs = []
-
-for (let i = 0; i < rootDir.length; i++) {
-  const dirent = rootDir[i]
-
-  if (dirent.isDirectory() && dirent.name.startsWith('.') === false) {
-    rootDirs.push(dirent.name)
+  for (let i = 0; i < entry.length; i++) {
+    const item = path + '/' + entry[i]
+    fs.statSync(item).isFile() ? callback(item) : walk(item, callback)
   }
 }
 
-// Create SCSS functions for SVG icons
+// ./tmp/category/**/*.svg
+// 0123456       ^^   1234
+
+const delimiters = /_|\//g
+
+const naming = path => {
+  path = path.slice(path.indexOf('/', 6) + 1, path.length - 4)
+  path = path.replace(delimiters, '-')
+
+  return 'ic-' + path
+}
+
+const fillNone = /<path fill="none" d="(\w|\d|\s|\.)+"\/>/g
+const circle = /circle/g
+const path = /path/g
 
 const icon = (name, svg) => {
-  svg = svg.replace(/circle/g, 'circle fill="#{hex($color)}"')
-  svg = svg.replace(/path/g, 'path fill="#{hex($color)}"')
+  svg = svg.replace(fillNone, '')
+  svg = svg.replace(circle, 'circle fill="#{hex($color)}"')
+  svg = svg.replace(path, 'path fill="#{hex($color)}"')
 
-  return `@function ${name}($color) {\n  @return 'data:image/svg+xml;utf8,${svg}';\n}`
+  return `\n@function ${name}($color) {\n  @return 'data:image/svg+xml;utf8,${svg}';\n}\n`
 }
 
-// Reading files and directories kind of sucks
+const dist = {
+  'materialicons/': { name: 'filled', data: '' },
+  'materialiconsoutlined/': { name: 'outlined', data: '' },
+  'materialiconsround/': { name: 'round', data: '' },
+  'materialiconssharp/': { name: 'sharp', data: '' },
+  'materialiconstwotone/': { name: 'twotone', data: '' }
+}
 
-const readDirSyncSafe = data => {
-  let result
+walk('./tmp', path => {
+  const svg = fs.readFileSync(path, 'utf8')
 
-  try {
-    result = fs.readdirSync(data)
-  } catch (err) {
-    console.log(err.message)
+  for (const key in dist) {
+    const name = naming(path.replace(key, ''))
+
+    if (path.includes(key) === true) {
+      dist[key].data += icon(name, svg)
+    }
   }
-
-  return result
-}
-
-const readFileSyncSafe = data => {
-  let result
-
-  try {
-    result = fs.readFileSync(data, 'utf8')
-  } catch (err) {
-    console.log(err.message)
-  }
-
-  return result
-}
-
-// The rest...
-
-const result = [`@function hex($hex) {\n  @return '%23' + str-slice($hex + '', 2);\n}`]
-
-for (let i = 0; i < rootDirs.length; i++) {
-  const prodDir = rootPath + rootDirs[i] + '/svg/production/'
-  const prodDirs = readDirSyncSafe(prodDir) || []
-
-  for (let i = 0; i < prodDirs.length; i++) {
-    const svgName = prodDirs[i]
-    const iconName = svgName.replace('.svg', '').replace(/_/g, '-')
-
-    result.push(icon(iconName, readFileSyncSafe(prodDir + svgName, 'utf8')))
-  }
-}
-
-// Write output to a file
-
-const output = '\n' + result.join('\n\n')
-
-fs.writeFile('main.scss', output, err => {
-  if (err) throw err
-
-  console.log('Done!')
 })
+
+const hexFn = `\n@function hex($hex) {\n  @return '%23' + str-slice($hex + '', 2);\n}\n`
+
+for (const key in dist) {
+  const file = dist[key]
+  fs.writeFileSync('style/' + file.name + '.scss', hexFn + file.data)
+}
