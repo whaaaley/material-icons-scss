@@ -7,7 +7,6 @@
   },
   "license": "ISC",
   "author": "Dustin Dowell",
-  "main": "index.js",
   "scripts": {
     "build": "make"
   },
