@@ -8,7 +8,7 @@ This project contains and generates SCSS functions that output SVG data URIs usi
 ## Install
 
 ```
-$ npm i @whaaaley/material-icons-scss
+$ npm i @whaaaley/material-icons-scss --registry=https://npm.pkg.github.com
 ```
 
 ## Usage
