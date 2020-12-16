@@ -24,11 +24,11 @@ Import one of the icon styles and place an icon by passing a color to an icon fu
 ### Input:
 
 ```scss
-@import 'material-icons-scss/style/filled';
-// @import 'material-icons-scss/style/outlined';
-// @import 'material-icons-scss/style/round';
-// @import 'material-icons-scss/style/sharp';
-// @import 'material-icons-scss/style/twotone';
+@import '@whaaaley/material-icons-scss/style/filled';
+// @import '@whaaaley/material-icons-scss/style/outlined';
+// @import '@whaaaley/material-icons-scss/style/round';
+// @import '@whaaaley/material-icons-scss/style/sharp';
+// @import '@whaaaley/material-icons-scss/style/twotone';
 
 $red: #FF0000;
 $icon-menu: ic-menu-24px($red);
