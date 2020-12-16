@@ -3,7 +3,7 @@
 
 > Material design icon functions for SCSS
 
-This project contains and generates SCSS functions that output SVG data URIs using SVGs from the official [google/material-design-icons](https://github.com/google/material-design-icons) repository, optimized using [SVGO](https://github.com/svg/svgo) and myself.
+This project contains and generates SCSS functions that output SVG data URIs using SVGs from the official [google/material-design-icons](https://github.com/google/material-design-icons) repository, optimized using [SVGO](https://github.com/svg/svgo).
 
 ## Install
 
