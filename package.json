@@ -1,11 +1,11 @@
 {
   "name": "@whaaaley/material-icons-scss",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Material design icon functions for SCSS",
   "repository": {
     "url": "whaaaley/material-icons-scss"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Dustin Dowell",
   "scripts": {
     "build": "make"
