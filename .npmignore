@@ -2,5 +2,6 @@ node_modules
 material-design-icons
 tmp
 
+.gitattributes
 Makefile
 index.js
