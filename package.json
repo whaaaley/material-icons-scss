@@ -1,12 +1,17 @@
 {
   "name": "@whaaaley/material-icons-scss",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Material design icon functions for SCSS",
+  "homepage": "https://github.com/whaaaley/material-icons-scss#readme",
+  "bugs": {
+    "url": "https://github.com/whaaaley/material-icons-scss/issues"
+  },
   "repository": {
-    "url": "whaaaley/material-icons-scss"
+    "url": "git+https://github.com/whaaaley/material-icons-scss.git"
   },
   "license": "ISC",
   "author": "Dustin Dowell",
+  "main": "index.js",
   "scripts": {
     "build": "make",
     "start": "npm publish --access public && npm publish --registry=https://npm.pkg.github.com"
