@@ -1,15 +1,15 @@
 {
   "name": "@whaaaley/material-icons-scss",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Material design icon functions for SCSS",
   "repository": {
     "url": "whaaaley/material-icons-scss"
   },
-  "license": "MIT",
+  "license": "ISC",
   "author": "Dustin Dowell",
   "scripts": {
     "build": "make",
-    "publish": "npm publish --access public && npm publish --registry=https://npm.pkg.github.com"
+    "start": "npm publish --access public && npm publish --registry=https://npm.pkg.github.com"
   },
   "devDependencies": {
     "svgo": "^1.3.2"
