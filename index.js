@@ -27,11 +27,13 @@ const circle = /circle/g
 const path = /path/g
 
 const icon = (name, svg) => {
+  svg = svg.replace('xmlns="http://www.w3.org/2000/svg"', '#{$xmlns}')
+
   svg = svg.replace(fillNone, '')
   svg = svg.replace(circle, 'circle fill="#{hex($color)}"')
   svg = svg.replace(path, 'path fill="#{hex($color)}"')
 
-  return `\n@function ${name}($color) {\n  @return 'data:image/svg+xml;utf8,${svg}';\n}\n`
+  return `\n@function ${name}($color) {\n  @return '#{$scheme}${svg}';\n}\n`
 }
 
 const dist = {
@@ -54,9 +56,11 @@ walk('./tmp', path => {
   }
 })
 
+const vars = `\n$scheme: 'data:image/svg+xml;utf8,';\n$xmlns: 'xmlns="http://www.w3.org/2000/svg"';\n`
 const hexFn = `\n@function hex($hex) {\n  @return '%23' + str-slice($hex + '', 2);\n}\n`
+const banner = vars + hexFn
 
 for (const key in dist) {
   const file = dist[key]
-  fs.writeFileSync('style/' + file.name + '.scss', hexFn + file.data)
+  fs.writeFileSync('style/' + file.name + '.scss', banner + file.data)
 }
