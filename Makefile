@@ -10,7 +10,7 @@ clean:
 	rm -rf tmp style && mkdir {tmp,style}
 
 optimize:
-	svgo -r -q --enable=removeViewbox,sortAttrs -f material-design-icons/src -o tmp
+	svgo -r -q -f material-design-icons/src -o tmp
 
 build: clean optimize
 	node index.js
