@@ -1,9 +1,10 @@
 {
   "name": "@whaaaley/material-icons-scss",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Material design icon functions for SCSS",
   "keywords": [
     "design",
+    "extended",
     "google",
     "icon",
     "icons",
@@ -27,6 +28,7 @@
     "start": "npm publish --access public"
   },
   "devDependencies": {
+    "sass": "^1.32.8",
     "svgo": "^2.3.0"
   }
 }
