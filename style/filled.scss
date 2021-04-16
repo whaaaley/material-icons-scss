@@ -423,7 +423,7 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-edit-off-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><title>ic_edit_off_24px</title><path d="m12.126 8.125 1.937-1.937 3.747 3.747-1.937 1.938zM20.71 5.63l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75L20.71 7a1 1 0 0 0 0-1.37zM2 5l6.63 6.63L3 17.25V21h3.75l5.63-5.62L18 21l2-2L4 3 2 5z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="m12.126 8.125 1.937-1.937 3.747 3.747-1.937 1.938zM20.71 5.63l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75L20.71 7a1 1 0 0 0 0-1.37zM2 5l6.63 6.63L3 17.25V21h3.75l5.63-5.62L18 21l2-2L4 3 2 5z"/></g></svg>';
 }
 
 @function ic-eject-24px($color) {
@@ -2387,7 +2387,7 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-rtt-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><title>ic_dialer_rtt_revised_24px</title><path d="m9.03 3-1.11 7.07h2.62l.7-4.5h2.58L11.8 18.43H9.47L9.06 21h7.27l.4-2.57h-2.35l2-12.86h2.58l-.71 4.5h2.65L22 3H9.03zM8 5H4l-.31 2h4L8 5zm-.61 4h-4l-.31 2h4l.31-2zm.92 8h-6L2 19h6l.31-2zm.62-4h-6l-.31 2h6.01l.3-2z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="m9.03 3-1.11 7.07h2.62l.7-4.5h2.58L11.8 18.43H9.47L9.06 21h7.27l.4-2.57h-2.35l2-12.86h2.58l-.71 4.5h2.65L22 3H9.03zM8 5H4l-.31 2h4L8 5zm-.61 4h-4l-.31 2h4l.31-2zm.92 8h-6L2 19h6l.31-2zm.62-4h-6l-.31 2h6.01l.3-2z"/></g></svg>';
 }
 
 @function ic-screen-share-24px($color) {
@@ -5511,7 +5511,7 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-assistant-direction-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><title>Asset 1</title><path d="M14 10H9c-.6 0-1 .4-1 1v4h2v-3h4v2.5l3.5-3.5L14 7.5V10zm-2-9C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm7.73 11.58-7.19 7.22c-.35.27-.79.27-1.15 0L4.2 12.58a.932.932 0 0 1 0-1.16l7.19-7.22c.35-.27.79-.27 1.15 0l7.19 7.22c.36.27.36.8 0 1.16z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M14 10H9c-.6 0-1 .4-1 1v4h2v-3h4v2.5l3.5-3.5L14 7.5V10zm-2-9C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm7.73 11.58-7.19 7.22c-.35.27-.79.27-1.15 0L4.2 12.58a.932.932 0 0 1 0-1.16l7.19-7.22c.35-.27.79-.27 1.15 0l7.19 7.22c.36.27.36.8 0 1.16z"/></g></svg>';
 }
 
 @function ic-assistant-navigation-24px($color) {
@@ -6559,7 +6559,7 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-recommend-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><title>ic_recommend_24px</title><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6 9.8a.9.9 0 0 1-.1.5l-2.1 4.9a1.34 1.34 0 0 1-1.3.8H9a2 2 0 0 1-2-2v-5a1.28 1.28 0 0 1 .4-1L12 5l.69.69a1.08 1.08 0 0 1 .3.7v.2L12.41 10H17a1 1 0 0 1 1 1z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6 9.8a.9.9 0 0 1-.1.5l-2.1 4.9a1.34 1.34 0 0 1-1.3.8H9a2 2 0 0 1-2-2v-5a1.28 1.28 0 0 1 .4-1L12 5l.69.69a1.08 1.08 0 0 1 .3.7v.2L12.41 10H17a1 1 0 0 1 1 1z"/></g></svg>';
 }
 
 @function ic-reduce-capacity-24px($color) {

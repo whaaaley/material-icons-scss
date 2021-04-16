@@ -6,6 +6,7 @@ module.exports = {
     // 'collapseGroups', // bugged?
     'convertPathData',
     'mergePaths',
+    'removeTitle',
     'removeViewBox',
     'sortAttrs'
   ]
