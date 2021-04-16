@@ -5,7 +5,7 @@
 
 This project contains and generates SCSS functions that output SVG Data URLs using SVGs from the official [google/material-design-icons](https://github.com/google/material-design-icons) repository, optimized using [SVGO](https://github.com/svg/svgo) and this project.
 
-You can find a list of all available icons, styles, and sizes on [Google Fonts.](https://fonts.google.com/icons?selected=Material+Icons)
+You can find a list of all available icons, styles, and sizes on [Google Fonts.](https://fonts.google.com/icons?selected=Material+Icons) However, this page as of April 15, 2021, has more icons than what is available in the Github repo.
 
 ## Install
 
