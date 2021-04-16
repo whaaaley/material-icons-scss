@@ -22,8 +22,10 @@ const naming = path => {
 }
 
 
-const style = / style=".*?"/g
+const baseProfile = / baseProfile=".*?"/g
 const fillRule = / fill-rule=".*?"/g
+const style = / style=".*?"/g
+
 const fillNone = /<(circle|path|polygon|rect)(?:(?!\/>).)*fill="none".*?\/>/g
 
 const start = /></
@@ -32,8 +34,10 @@ const end = /<\/svg>/
 const icon = (name, svg) => {
   svg = svg.replace('xmlns="http://www.w3.org/2000/svg"', '#{$xmlns}')
 
-  svg = svg.replace(style, '')
+  svg = svg.replace(baseProfile, '')
   svg = svg.replace(fillRule, '')
+  svg = svg.replace(style, '')
+
   svg = svg.replace(fillNone, '')
 
   svg = svg.replace(start, '><g fill="#{hex($color)}"><')
