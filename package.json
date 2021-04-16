@@ -27,6 +27,7 @@
     "start": "npm publish --access public"
   },
   "devDependencies": {
+    "sass": "^1.32.8",
     "svgo": "^2.3.0"
   }
 }
