@@ -1,5 +1,5 @@
 
-.PHONY: all clean optimize build
+.PHONY: all clean optimize-stable optimize-extended build
 
 PATH := $(PWD)/node_modules/.bin:$(PATH)
 SHELL := /bin/bash
