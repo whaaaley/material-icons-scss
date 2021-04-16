@@ -24,7 +24,7 @@ const naming = path => {
 
 const style = / style=".*?"/g
 const fillRule = / fill-rule=".*?"/g
-const fillNone = /<(circle|path|rect)(?:(?!\/>).)*fill="none".*?\/>/g
+const fillNone = /<(circle|path|polygon|rect)(?:(?!\/>).)*fill="none".*?\/>/g
 
 const start = /></
 const end = /<\/svg>/
