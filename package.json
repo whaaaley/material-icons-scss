@@ -1,9 +1,10 @@
 {
   "name": "@whaaaley/material-icons-scss",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Material design icon functions for SCSS",
   "keywords": [
     "design",
+    "extended",
     "google",
     "icon",
     "icons",
