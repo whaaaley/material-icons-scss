@@ -5,7 +5,7 @@ module.exports = {
     'cleanupEnableBackground',
     'collapseGroups',
     'convertPathData',
-    // 'mergePaths',
+    'mergePaths',
     'removeTitle',
     'removeViewBox',
     'sortAttrs'

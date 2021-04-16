@@ -52,6 +52,6 @@ optimize-extended:
 
 optimize: clean optimize-stable optimize-extended
 
-build-demo:
+build:
 	node index.js
 	sass --no-source-map demo-src:demo-dist
