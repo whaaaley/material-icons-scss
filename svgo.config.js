@@ -3,7 +3,7 @@ module.exports = {
   multipass: true,
   plugins: [
     'cleanupEnableBackground',
-    'collapseGroups',
+    // 'collapseGroups', // bugged?
     'convertPathData',
     'mergePaths',
     'removeViewBox',

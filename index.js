@@ -26,7 +26,10 @@ const baseProfile = / baseProfile=".*?"/g
 const fillRule = / fill-rule=".*?"/g
 const style = / style=".*?"/g
 
-const fillNone = /<(circle|path|polygon|rect)(?:(?!\/>).)*fill="none".*?\/>/g
+const fillNone = /<(circle|g|path|polygon|rect)(?:(?!\/>).)*fill="none".*?\/>/g
+
+const groupOpen = /<g>/g
+const groupClose = /<\/g>/g
 
 const start = /></
 const end = /<\/svg>/
@@ -39,6 +42,9 @@ const icon = (name, svg) => {
   svg = svg.replace(style, '')
 
   svg = svg.replace(fillNone, '')
+
+  svg = svg.replace(groupOpen, '')
+  svg = svg.replace(groupClose, '')
 
   svg = svg.replace(start, '><g fill="#{hex($color)}"><')
   svg = svg.replace(end, '</g></svg>')

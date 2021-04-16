@@ -1607,7 +1607,7 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-5g-20px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><path d="M12 10.5h2V12h-3V8h4c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9.5h-3v1zM9 8H6v1.5h2c.55 0 1 .45 1 1V12c0 .55-.45 1-1 1H5v-1h3v-1.5H5V7h4v1z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><path d="M12 10.5h2V12h-3V8h4c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9.5h-3v1z"/><path d="M9 8H6v1.5h2c.55 0 1 .45 1 1V12c0 .55-.45 1-1 1H5v-1h3v-1.5H5V7h4v1z"/></g></svg>';
 }
 
 @function ic-5g-24px($color) {
@@ -2551,11 +2551,11 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-dynamic-feed-20px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><g/><path d="M4 8H3v7c0 .55.45 1 1 1h9v-1H4V8z"/><path d="M6 6H5v7c0 .55.45 1 1 1h9v-1H6V6z"/><path d="M16 4H8c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zm0 7H8V7h8v4z"/><g display="none"><g display="inline"/><path d="M4 15V8H3v7c0 .55.45 1 1 1h9v-1H4z" display="inline"/><path d="M6 13V6H5v7c0 .55.45 1 1 1h9v-1H6z" display="inline"/><path d="M16 5v6H8V5h8m0-1H8c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1z" display="inline"/><rect width="8" height="2" x="8" y="5" display="inline"/></g></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><g/><path d="M4 8H3v7c0 .55.45 1 1 1h9v-1H4V8z"/><path d="M6 6H5v7c0 .55.45 1 1 1h9v-1H6V6z"/><path d="M16 4H8c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zm0 7H8V7h8v4z"/><g display="none"><g display="inline"/><path d="M4 15V8H3v7c0 .55.45 1 1 1h9v-1H4z" display="inline"/><path d="M6 13V6H5v7c0 .55.45 1 1 1h9v-1H6z" display="inline"/><g display="inline"><path d="M16 5v6H8V5h8m0-1H8c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1z"/><g display="inline"><rect width="8" height="2" x="8" y="5"/></g></svg>';
 }
 
 @function ic-dynamic-feed-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><g/><path d="M8 8H6v7c0 1.1.9 2 2 2h9v-2H8V8z"/><path d="M20 3h-8c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 8h-8V7h8v4zM4 12H2v7c0 1.1.9 2 2 2h9v-2H4v-7z"/><g display="none"><g display="inline"/><g display="inline"><path d="M8 8H6v7c0 1.1.9 2 2 2h9v-2H8V8z"/><path d="M20 3h-8c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 8h-8V7h8v4zM4 12H2v7c0 1.1.9 2 2 2h9v-2H4v-7z"/></g></g></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><g/><path d="M8 8H6v7c0 1.1.9 2 2 2h9v-2H8V8z"/><path d="M20 3h-8c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 8h-8V7h8v4zM4 12H2v7c0 1.1.9 2 2 2h9v-2H4v-7z"/><g display="none"><g display="inline"/><g display="inline"><path d="M8 8H6v7c0 1.1.9 2 2 2h9v-2H8V8z"/><path d="M20 3h-8c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 8h-8V7h8v4zM4 12H2v7c0 1.1.9 2 2 2h9v-2H4v-7z"/></g></svg>';
 }
 
 @function ic-file-copy-24px($color) {
@@ -3503,7 +3503,7 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-grid-view-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><g><path d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"/></g></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z"/></g></svg>';
 }
 
 @function ic-request-quote-24px($color) {
@@ -4987,11 +4987,11 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-hardware-20px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><path d="M8 15c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-5H8v5zm6-11-2 2V4H8C6.34 4 5 5.34 5 7h3v2h4V7l2 2h1V4h-1z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><path d="M8 15c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-5H8v5z"/><path d="m14 4-2 2V4H8C6.34 4 5 5.34 5 7h3v2h4V7l2 2h1V4h-1z"/></g></svg>';
 }
 
 @function ic-hardware-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="m18 3-3 3V3H9C6.24 3 4 5.24 4 8h5v3h6V8l3 3h2V3h-2zM9 13v7c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-7H9z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="m18 3-3 3V3H9C6.24 3 4 5.24 4 8h5v3h6V8l3 3h2V3h-2z"/><path d="M9 13v7c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-7H9z"/></g></svg>';
 }
 
 @function ic-home-repair-service-20px($color) {
@@ -5007,11 +5007,11 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-hvac-20px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><path d="M10 13c.88 0 1.67-.39 2.22-1H7.78c.55.61 1.34 1 2.22 1zm0-6c-.88 0-1.66.39-2.21.99h4.42C11.66 7.39 10.88 7 10 7zm-2.58 4.5h5.17c.22-.38.36-.8.39-1.26H7.02c.04.46.18.88.4 1.26zm0-3.01c-.22.38-.36.8-.4 1.26h5.95c-.04-.46-.18-.88-.4-1.26H7.42z"/><path d="M15 4H5c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zm-5 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><path d="M10 13c.88 0 1.67-.39 2.22-1H7.78c.55.61 1.34 1 2.22 1z"/><path d="M10 7c-.88 0-1.66.39-2.21.99h4.42C11.66 7.39 10.88 7 10 7z"/><path d="M7.42 11.5h5.17c.22-.38.36-.8.39-1.26H7.02c.04.46.18.88.4 1.26z"/><path d="M7.42 8.49c-.22.38-.36.8-.4 1.26h5.95c-.04-.46-.18-.88-.4-1.26H7.42z"/><path d="M15 4H5c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zm-5 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></g></svg>';
 }
 
 @function ic-hvac-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M12 16c1.01 0 1.91-.39 2.62-1H9.38c.71.61 1.61 1 2.62 1zm-3.44-2h6.89c.26-.45.44-.96.51-1.5h-7.9c.06.54.23 1.05.5 1.5zM12 8c-1.01 0-1.91.39-2.62 1h5.24c-.71-.61-1.61-1-2.62-1zm-3.44 2c-.26.45-.44.96-.51 1.5h7.9c-.07-.54-.24-1.05-.51-1.5H8.56z"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M12 16c1.01 0 1.91-.39 2.62-1H9.38c.71.61 1.61 1 2.62 1z"/><path d="M8.56 14h6.89c.26-.45.44-.96.51-1.5h-7.9c.06.54.23 1.05.5 1.5z"/><path d="M12 8c-1.01 0-1.91.39-2.62 1h5.24c-.71-.61-1.61-1-2.62-1z"/><path d="M8.56 10c-.26.45-.44.96-.51 1.5h7.9c-.07-.54-.24-1.05-.51-1.5H8.56z"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></g></svg>';
 }
 
 @function ic-icecream-20px($color) {
@@ -5035,7 +5035,7 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-liquor-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M3 14c0 1.3.84 2.4 2 2.82V20H3v2h6v-2H7v-3.18C8.16 16.4 9 15.3 9 14V6H3v8zm2-6h2v3H5V8zm15.63.54-.95-.32a.991.991 0 0 1-.68-.94V3c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v4.28c0 .43-.28.81-.68.95l-.95.32c-.82.27-1.37 1.03-1.37 1.89V20c0 1.1.9 2 2 2h7c1.1 0 2-.9 2-2v-9.56c0-.86-.55-1.62-1.37-1.9zM16 4h1v1h-1V4zm-3 6.44.95-.32C15.18 9.72 16 8.57 16 7.28V7h1v.28a3 3 0 0 0 2.05 2.85l.95.31V12h-7v-1.56zM20 20h-7v-2h7v2z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M3 14c0 1.3.84 2.4 2 2.82V20H3v2h6v-2H7v-3.18C8.16 16.4 9 15.3 9 14V6H3v8zm2-6h2v3H5V8z"/><path d="m20.63 8.54-.95-.32a.991.991 0 0 1-.68-.94V3c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v4.28c0 .43-.28.81-.68.95l-.95.32c-.82.27-1.37 1.03-1.37 1.89V20c0 1.1.9 2 2 2h7c1.1 0 2-.9 2-2v-9.56c0-.86-.55-1.62-1.37-1.9zM16 4h1v1h-1V4zm-3 6.44.95-.32C15.18 9.72 16 8.57 16 7.28V7h1v.28a3 3 0 0 0 2.05 2.85l.95.31V12h-7v-1.56zM20 20h-7v-2h7v2z"/></g></svg>';
 }
 
 @function ic-local-activity-24px($color) {
@@ -6479,11 +6479,11 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-people-alt-20px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><g/><circle cx="8.5" cy="7.5" r="2.5"/><path d="M10.99 9.95A2.5 2.5 0 1 0 11.5 5c-.17 0-.34.02-.51.05.62.63 1.01 1.5 1.01 2.45s-.39 1.82-1.01 2.45zM8.5 11c-1.84 0-5.5.66-5.5 2.23V15h11v-1.77C14 11.66 10.34 11 8.5 11zm5.23.23c.75.48 1.27 1.12 1.27 2V15h2v-1.77c0-1.05-1.64-1.69-3.27-2z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><g/><circle cx="8.5" cy="7.5" r="2.5"/><path d="M10.99 9.95A2.5 2.5 0 1 0 11.5 5c-.17 0-.34.02-.51.05.62.63 1.01 1.5 1.01 2.45s-.39 1.82-1.01 2.45z"/><path d="M8.5 11c-1.84 0-5.5.66-5.5 2.23V15h11v-1.77C14 11.66 10.34 11 8.5 11z"/><path d="M13.73 11.23c.75.48 1.27 1.12 1.27 2V15h2v-1.77c0-1.05-1.64-1.69-3.27-2z"/></g></svg>';
 }
 
 @function ic-people-alt-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><g/><path d="M16.67 13.13C18.04 14.06 19 15.32 19 17v3h4v-3c0-2.18-3.57-3.47-6.33-3.87z"/><circle cx="9" cy="8" r="4"/><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4c-.47 0-.91.1-1.33.24a5.98 5.98 0 0 1 0 7.52c.42.14.86.24 1.33.24zm-6 1c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><g/><path d="M16.67 13.13C18.04 14.06 19 15.32 19 17v3h4v-3c0-2.18-3.57-3.47-6.33-3.87z"/><circle cx="9" cy="8" r="4"/><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4c-.47 0-.91.1-1.33.24a5.98 5.98 0 0 1 0 7.52c.42.14.86.24 1.33.24z"/><path d="M9 13c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/></g></svg>';
 }
 
 @function ic-people-outline-24px($color) {
@@ -6643,15 +6643,15 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-sports-baseball-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M3.81 6.28C2.67 7.9 2 9.87 2 12s.67 4.1 1.81 5.72C6.23 16.95 8 14.68 8 12S6.23 7.05 3.81 6.28zm16.38 0C17.77 7.05 16 9.32 16 12s1.77 4.95 4.19 5.72C21.33 16.1 22 14.13 22 12s-.67-4.1-1.81-5.72z"/><path d="M14 12c0-3.28 1.97-6.09 4.79-7.33C17.01 3.02 14.63 2 12 2S6.99 3.02 5.21 4.67C8.03 5.91 10 8.72 10 12s-1.97 6.09-4.79 7.33C6.99 20.98 9.37 22 12 22s5.01-1.02 6.79-2.67A8.002 8.002 0 0 1 14 12z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M3.81 6.28C2.67 7.9 2 9.87 2 12s.67 4.1 1.81 5.72C6.23 16.95 8 14.68 8 12S6.23 7.05 3.81 6.28z"/><path d="M20.19 6.28C17.77 7.05 16 9.32 16 12s1.77 4.95 4.19 5.72C21.33 16.1 22 14.13 22 12s-.67-4.1-1.81-5.72z"/><path d="M14 12c0-3.28 1.97-6.09 4.79-7.33C17.01 3.02 14.63 2 12 2S6.99 3.02 5.21 4.67C8.03 5.91 10 8.72 10 12s-1.97 6.09-4.79 7.33C6.99 20.98 9.37 22 12 22s5.01-1.02 6.79-2.67A8.002 8.002 0 0 1 14 12z"/></g></svg>';
 }
 
 @function ic-sports-basketball-20px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><path d="M13.05 9.5h3.92c-.1-1.43-.63-2.74-1.47-3.81a5.024 5.024 0 0 0-2.45 3.81zm-6.1 1H3.03c.1 1.43.63 2.74 1.47 3.81a5.024 5.024 0 0 0 2.45-3.81zm0-1a4.983 4.983 0 0 0-2.46-3.81A6.998 6.998 0 0 0 3.03 9.5h3.92zm6.1 1c.17 1.63 1.1 3.02 2.46 3.81a7.086 7.086 0 0 0 1.47-3.81h-3.93zm-1.02 0H10.5v6.47c1.67-.12 3.17-.82 4.31-1.9a5.944 5.944 0 0 1-2.78-4.57zm0-1a5.99 5.99 0 0 1 2.79-4.58 6.974 6.974 0 0 0-4.31-1.9V9.5h1.52zm-4.06 1a5.99 5.99 0 0 1-2.79 4.58 6.974 6.974 0 0 0 4.31 1.9V10.5H7.97zm0-1H9.5V3.03c-1.67.12-3.17.82-4.31 1.9 1.55.97 2.63 2.64 2.78 4.57z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="20" height="20"><g fill="#{hex($color)}"><path d="M13.05 9.5h3.92c-.1-1.43-.63-2.74-1.47-3.81a5.024 5.024 0 0 0-2.45 3.81z"/><path d="M6.95 10.5H3.03c.1 1.43.63 2.74 1.47 3.81a5.024 5.024 0 0 0 2.45-3.81z"/><path d="M6.95 9.5a4.983 4.983 0 0 0-2.46-3.81A6.998 6.998 0 0 0 3.03 9.5h3.92z"/><path d="M13.05 10.5c.17 1.63 1.1 3.02 2.46 3.81a7.086 7.086 0 0 0 1.47-3.81h-3.93z"/><path d="M12.03 10.5H10.5v6.47c1.67-.12 3.17-.82 4.31-1.9a5.944 5.944 0 0 1-2.78-4.57z"/><path d="M12.03 9.5a5.99 5.99 0 0 1 2.79-4.58 6.974 6.974 0 0 0-4.31-1.9V9.5h1.52z"/><path d="M7.97 10.5a5.99 5.99 0 0 1-2.79 4.58 6.974 6.974 0 0 0 4.31 1.9V10.5H7.97z"/><path d="M7.97 9.5H9.5V3.03c-1.67.12-3.17.82-4.31 1.9 1.55.97 2.63 2.64 2.78 4.57z"/></g></svg>';
 }
 
 @function ic-sports-basketball-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M17.09 11h4.86a9.951 9.951 0 0 0-1.54-4.4 5.987 5.987 0 0 0-3.32 4.4zM6.91 11a5.987 5.987 0 0 0-3.32-4.4A9.951 9.951 0 0 0 2.05 11h4.86zm8.16 0a7.994 7.994 0 0 1 4.06-6A9.969 9.969 0 0 0 13 2.05V11h2.07zm-6.14 0H11V2.05A9.943 9.943 0 0 0 4.87 5a7.994 7.994 0 0 1 4.06 6zm6.14 2H13v8.95A9.943 9.943 0 0 0 19.13 19a7.994 7.994 0 0 1-4.06-6zM3.59 17.4A6.029 6.029 0 0 0 6.91 13H2.05c.16 1.61.71 3.11 1.54 4.4zm13.5-4.4a5.987 5.987 0 0 0 3.32 4.4 9.951 9.951 0 0 0 1.54-4.4h-4.86zm-8.16 0a7.994 7.994 0 0 1-4.06 6A9.969 9.969 0 0 0 11 21.95V13H8.93z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M17.09 11h4.86a9.951 9.951 0 0 0-1.54-4.4 5.987 5.987 0 0 0-3.32 4.4z"/><path d="M6.91 11a5.987 5.987 0 0 0-3.32-4.4A9.951 9.951 0 0 0 2.05 11h4.86z"/><path d="M15.07 11a7.994 7.994 0 0 1 4.06-6A9.969 9.969 0 0 0 13 2.05V11h2.07z"/><path d="M8.93 11H11V2.05A9.943 9.943 0 0 0 4.87 5a7.994 7.994 0 0 1 4.06 6z"/><path d="M15.07 13H13v8.95A9.943 9.943 0 0 0 19.13 19a7.994 7.994 0 0 1-4.06-6z"/><path d="M3.59 17.4A6.029 6.029 0 0 0 6.91 13H2.05c.16 1.61.71 3.11 1.54 4.4z"/><path d="M17.09 13a5.987 5.987 0 0 0 3.32 4.4 9.951 9.951 0 0 0 1.54-4.4h-4.86z"/><path d="M8.93 13a7.994 7.994 0 0 1-4.06 6A9.969 9.969 0 0 0 11 21.95V13H8.93z"/></g></svg>';
 }
 
 @function ic-sports-cricket-20px($color) {
@@ -6699,7 +6699,7 @@ $xmlns: 'xmlns="http://www.w3.org/2000/svg"';
 }
 
 @function ic-sports-hockey-24px($color) {
-  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M2 17v3h2v-4H3c-.55 0-1 .45-1 1zm7-1H5v4l4.69-.01c.38 0 .72-.21.89-.55l.87-1.9-1.59-3.48L9 16zm12.71.29A.997.997 0 0 0 21 16h-1v4h2v-3c0-.28-.11-.53-.29-.71zm-8.11-3.45L17.65 4H14.3l-1.76 3.97-.49 1.1-.05.14L9.7 4H6.35l4.05 8.84 1.52 3.32.08.18 1.42 3.1c.17.34.51.55.89.55L19 20v-4h-4l-1.4-3.16z"/></g></svg>';
+  @return '#{$scheme}<svg #{$xmlns} width="24" height="24"><g fill="#{hex($color)}"><path d="M2 17v3h2v-4H3c-.55 0-1 .45-1 1zm7-1H5v4l4.69-.01c.38 0 .72-.21.89-.55l.87-1.9-1.59-3.48L9 16z"/><path d="M21.71 16.29A.997.997 0 0 0 21 16h-1v4h2v-3c0-.28-.11-.53-.29-.71z"/><path d="M13.6 12.84 17.65 4H14.3l-1.76 3.97-.49 1.1-.05.14L9.7 4H6.35l4.05 8.84 1.52 3.32.08.18 1.42 3.1c.17.34.51.55.89.55L19 20v-4h-4l-1.4-3.16z"/></g></svg>';
 }
 
 @function ic-sports-kabaddi-20px($color) {
