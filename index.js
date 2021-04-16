@@ -18,20 +18,26 @@ const delimiters = /_|\//g
 const naming = path => {
   path = path.slice(path.indexOf('/', 6) + 1, path.length - 4)
   path = path.replace(delimiters, '-')
-
   return 'ic-' + path
 }
 
-const fillNone = /<path fill="none" d="(\w|\d|\s|\.)+"\/>/g
-const circle = /circle/g
-const path = /path/g
+
+const style = / style=".*?"/g
+const fillRule = / fill-rule=".*?"/g
+const fillNone = /<(circle|path|rect)(?:(?!\/>).)*fill="none".*?\/>/g
+
+const start = /></
+const end = /<\/svg>/
 
 const icon = (name, svg) => {
   svg = svg.replace('xmlns="http://www.w3.org/2000/svg"', '#{$xmlns}')
 
+  svg = svg.replace(style, '')
+  svg = svg.replace(fillRule, '')
   svg = svg.replace(fillNone, '')
-  svg = svg.replace(circle, 'circle fill="#{hex($color)}"')
-  svg = svg.replace(path, 'path fill="#{hex($color)}"')
+
+  svg = svg.replace(start, '><g fill="#{hex($color)}"><')
+  svg = svg.replace(end, '</g></svg>')
 
   return `\n@function ${name}($color) {\n  @return '#{$scheme}${svg}';\n}\n`
 }
