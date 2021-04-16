@@ -1,7 +1,12 @@
 node_modules
-material-design-icons
+
+demo-dist
+demo-src
+icons
 tmp
 
 .gitattributes
+
 Makefile
 index.js
+svgo.config.js

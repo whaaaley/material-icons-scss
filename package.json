@@ -1,6 +1,6 @@
 {
   "name": "@whaaaley/material-icons-scss",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Material design icon functions for SCSS",
   "keywords": [
     "design",
@@ -22,7 +22,7 @@
   },
   "license": "ISC",
   "author": "Dustin Dowell",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "build": "make",
     "start": "npm publish --access public"
