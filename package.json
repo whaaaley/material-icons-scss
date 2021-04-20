@@ -1,6 +1,7 @@
 {
   "name": "@whaaaley/material-icons-scss",
   "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Material design icon functions for SCSS",
   "keywords": [
     "design",
@@ -28,7 +29,7 @@
     "start": "npm publish --access public"
   },
   "devDependencies": {
-    "sass": "^1.32.8",
+    "sass": "^1.32.11",
     "svgo": "^2.3.0"
   }
 }
