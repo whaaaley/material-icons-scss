@@ -5,11 +5,13 @@ const fs = require('fs')
 // ./tmp/extended/toggle/toggle_off/24px.svg
 //  1   2        3      4      -   5    1234
 
+const underscore = /_/g
+
 const naming = path => {
   const name = path
     .split('/').slice(4)
     .join('-').slice(0, -4)
-    .replace('_', '-')
+    .replace(underscore, '-')
 
   return 'ic-' + name
 }
