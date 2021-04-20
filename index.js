@@ -24,9 +24,6 @@ const style = / style=".*?"/g
 const groupFillNone = /<g fill="none">.*<\/g>/g
 const fillNone = /<(circle|path|polygon|rect)(?:(?!\/>).)*fill="none".*?\/>/g
 
-// const groupOpen = /<g>/g
-// const groupClose = /<\/g>/g
-
 const groupCloseBugged = /<g\/>/g
 const randomRect = /<rect width="24" height="24"\/>/g
 
@@ -44,9 +41,6 @@ const icon = (name, svg) => {
   svg = svg.replace(groupFillNone, '')
   svg = svg.replace(fillNone, '')
 
-  // svg = svg.replace(groupOpen, '')
-  // svg = svg.replace(groupClose, '')
-
   svg = svg.replace(groupCloseBugged, '')
   svg = svg.replace(randomRect, '')
 
@@ -61,9 +55,6 @@ const icon = (name, svg) => {
 //
 
 const walk = (path, callback) => {
-  // ./tmp/category/**/*.svg
-  // 0123456       ^^   1234
-
   const entry = fs.readdirSync(path)
 
   for (let i = 0; i < entry.length; i++) {
@@ -109,7 +100,7 @@ const hexFn = `\n@function hex($hex) {\n  @return '%23' + str-slice($hex + '', 2
 const banner = vars + hexFn
 
 const writeProject = (dist, path) => {
-  console.log(path);
+  // console.log(path)
 
   for (const key in dist) {
     const file = dist[key]
