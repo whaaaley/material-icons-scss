@@ -1,17 +1,17 @@
 
 const fs = require('fs')
 
-//
-//
-//
-
-const delimiters = /_|\//g
+// Example path:
+// ./tmp/extended/toggle/toggle_off/24px.svg
+//  1   2        3      4      -   5    1234
 
 const naming = path => {
-  path = path.slice(path.indexOf('/', 6) + 1, path.length - 4)
-  path = path.replace(delimiters, '-')
+  const name = path
+    .split('/').slice(4)
+    .join('-').slice(0, -4)
+    .replace('_', '-')
 
-  return 'ic-' + path
+  return 'ic-' + name
 }
 
 const baseProfile = / baseProfile=".*?"/g
@@ -108,6 +108,7 @@ const banner = vars + hexFn
 
 const writeProject = (dist, path) => {
   console.log(path);
+
   for (const key in dist) {
     const file = dist[key]
 
