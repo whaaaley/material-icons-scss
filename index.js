@@ -44,7 +44,7 @@ const icon = (name, svg) => {
   svg = svg.replace(groupCloseBugged, '')
   svg = svg.replace(randomRect, '')
 
-  svg = svg.replace(start, '><g fill="#{hex($color)}"><')
+  svg = svg.replace(start, '><g fill="#{escape-hex($color)}"><')
   svg = svg.replace(end, '</g></svg>')
 
   return `\n@function ${name}($color) {\n  @return '#{$scheme}${svg}';\n}\n`
@@ -96,7 +96,7 @@ const walkProject = projectPath => {
 }
 
 const vars = `\n$scheme: 'data:image/svg+xml;utf8,';\n$xmlns: 'xmlns="http://www.w3.org/2000/svg"';\n`
-const hexFn = `\n@function hex($hex) {\n  @return '%23' + str-slice($hex + '', 2);\n}\n`
+const hexFn = `\n@function escape-hex($hex) {\n  @return '%23' + str-slice($hex + '', 2);\n}\n`
 const banner = vars + hexFn
 
 const writeProject = (dist, path) => {
