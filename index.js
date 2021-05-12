@@ -17,15 +17,8 @@ const naming = path => {
 }
 
 const baseProfile = / baseProfile=".*?"/g
-const fillRule = / fill-rule=".*?"/g
-// const display = / display=".*?"/g
-// const style = / style=".*?"/g
-
 const groupFillNone = /<g fill="none">.*<\/g>/g
 const fillNone = /<(circle|path|polygon|rect)(?:(?!\/>).)*fill="none".*?\/>/g
-
-// const groupCloseBugged = /<g\/>/g
-// const randomRect = /<rect width="24" height="24"\/>/g
 
 const start = /></
 const end = /<\/svg>/
@@ -34,16 +27,8 @@ const icon = (name, svg) => {
   svg = svg.replace('xmlns="http://www.w3.org/2000/svg"', '#{$xmlns}')
 
   svg = svg.replace(baseProfile, '')
-  svg = svg.replace(fillRule, '')
-
-  // svg = svg.replace(display, '')
-  // svg = svg.replace(style, '')
-
   svg = svg.replace(groupFillNone, '')
   svg = svg.replace(fillNone, '')
-
-  // svg = svg.replace(groupCloseBugged, '')
-  // svg = svg.replace(randomRect, '')
 
   svg = svg.replace(start, '><g fill="#{escape-hex($color)}"><')
   svg = svg.replace(end, '</g></svg>')
