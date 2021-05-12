@@ -6,7 +6,7 @@
 This project contains and generates SCSS functions that output SVG Data URLs using SVGs from the official [google/material-design-icons](https://github.com/google/material-design-icons) repository, optimized using [SVGO](https://github.com/svg/svgo) and this project.
 
 ## Notice
-Unfortunately, there are many issues inside Google's source SVGs themselves. I'm doing my best to work on these issues over time and correct them through the conversion process. On the bright side, over 95% of icons work great and are even smaller than the ones you'll get from Google. You can see all the current icons in their data URL form at the following locations.
+You can see all the current icons in their data URL form at the following locations.
 
 + [stable/filled](https://demo-dist.netlify.app/stable/filled.html)
 + [stable/outlined](https://demo-dist.netlify.app/stable/outlined.html)
@@ -19,11 +19,6 @@ Unfortunately, there are many issues inside Google's source SVGs themselves. I'm
 + [extended/round](https://demo-dist.netlify.app/extended/round.html)
 + [extended/sharp](https://demo-dist.netlify.app/extended/sharp.html)
 + [extended/twotone](https://demo-dist.netlify.app/extended/twotone.html)
-
-There are a number of known icons that cannot be fixed with the current SVG source files.
-+ filled/ic-repeat-on-24px
-+ filled/ic-repeat-one-on-24px
-+ filled/ic-shuffle-on-24px
 
 ## Install
 
